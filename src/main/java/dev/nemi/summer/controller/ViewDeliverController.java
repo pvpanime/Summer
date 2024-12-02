@@ -8,6 +8,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Log4j2
 public class ViewDeliverController {
 
+  @GetMapping("/board")
+  public String board() {
+    return "board/index";
+  }
+
   @GetMapping("/sus")
   public void sus() {
     log.info("sus...");
