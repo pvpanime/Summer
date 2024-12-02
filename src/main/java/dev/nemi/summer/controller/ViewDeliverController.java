@@ -13,4 +13,10 @@ public class ViewDeliverController {
     log.info("sus...");
   }
 
+  @GetMapping("/what")
+  public String what() {
+    return "why";
+  }
+
+
 }
